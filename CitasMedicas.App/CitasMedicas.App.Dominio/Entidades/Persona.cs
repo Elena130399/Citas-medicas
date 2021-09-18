@@ -8,6 +8,7 @@ namespace CitasMedicas.App.Dominio
         public string Nombre {get;set;}
         public string Apellidos {get;set;}
         public string NumeroTelefono {get;set;}
+        public string Email {get;set;}
         //public Genero Genero{get;set}
 
     }
