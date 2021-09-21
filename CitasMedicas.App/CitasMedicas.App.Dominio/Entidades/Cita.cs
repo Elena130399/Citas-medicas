@@ -1,7 +1,7 @@
 using System;
 namespace CitasMedicas.App.Dominio
 {
-    public class Sede
+    public class Cita
     {
         public Paciente paciente{get;set;}
 

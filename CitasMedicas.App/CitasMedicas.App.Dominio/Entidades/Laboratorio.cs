@@ -1,10 +1,10 @@
 using System;
 namespace CitasMedicas.App.Dominio
 {
-    public class Usuario
+    public class Laboratorio
     {
         public string TipoUsuario{get;set;}
         public string NomUsuario{get;set;}
-        public string Contraseña{get;set;}
+        public string Contrasena{get;set;}
     }
 }

@@ -3,6 +3,7 @@ namespace CitasMedicas.App.Dominio
 {
     public class Persona
     {
+        public int Id {get;set;}
         public string Nombre{get;set;}
         public string NumDoc{get;set;}
         public string NumTelefono{get;set;}
