@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Consola\\CitasMedicas.App.Consola.csproj",
         "projectName": "CitasMedicas.App.Consola",
         "projectPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Consola\\CitasMedicas.App.Consola.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\FedGomez\\.nuget\\packages\\",
         "outputPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\FedGomez\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -74,11 +74,11 @@
         "projectUniqueName": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj",
         "projectName": "CitasMedicas.App.Dominio",
         "projectPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\FedGomez\\.nuget\\packages\\",
         "outputPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\FedGomez\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -116,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -126,11 +126,11 @@
         "projectUniqueName": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Persistencia\\CitasMedicas.App.Persistencia.csproj",
         "projectName": "CitasMedicas.App.Persistencia",
         "projectPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Persistencia\\CitasMedicas.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\FedGomez\\.nuget\\packages\\",
         "outputPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\FedGomez\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -194,7 +194,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
