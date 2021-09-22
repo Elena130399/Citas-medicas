@@ -5,6 +5,7 @@ namespace CitasMedicas.App.Dominio
     {
         public string Codigo{get;set;}
         public string Sede{get;set;}
-        public string Nit{get;set;}
+        public string Nit{get;set;}        
+        public string Especializacion{get;set;}
     }
 }
