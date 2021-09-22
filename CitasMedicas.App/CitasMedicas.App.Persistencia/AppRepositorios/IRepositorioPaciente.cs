@@ -8,9 +8,9 @@ namespace CitasMedicas.App.Persistencia
     {
         IEnumerable<Paciente> GetAllPacientes(); //metodo que retorna todos los pacientes
         Paciente AddPaciente(Paciente paciente);
-        IRepositorioPaciente UpdatePaciente(IRepositorioPaciente paciente)
+        Paciente UpdatePaciente(Paciente paciente);
         void DeletePaciente(int idPaciente);
-        IRepositorioPaciente GetPaciente(int idPaciente);
+        Paciente GetPaciente(int idPaciente);
     }
 }
 //Interfaz: Conjunto de métodos-encabe
