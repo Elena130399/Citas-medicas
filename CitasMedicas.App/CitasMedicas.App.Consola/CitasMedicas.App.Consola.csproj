@@ -14,6 +14,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CitasMedicas.App.Persistencia\CitasMedicas.App.Persistencia.csproj" />
+<<<<<<< HEAD
+=======
+    <ProjectReference Include="..\CitasMedicas.App.Dominio\CitasMedicas.App.Dominio.csproj" />
+>>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
   </ItemGroup>
 
 </Project>

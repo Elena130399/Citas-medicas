@@ -3,14 +3,16 @@ using CitasMedicas.App.Persistencia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CitasMedicas.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    partial class AppContextModelSnapshot : ModelSnapshot
+    [Migration("20210922013102_inicial2")]
+    partial class inicial2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,23 +27,15 @@ namespace CitasMedicas.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-<<<<<<< HEAD
-=======
                     b.Property<string>("Apellidos")
                         .HasColumnType("nvarchar(max)");
 
->>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
                     b.Property<string>("Correo")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Direccion")
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< HEAD
-                    b.Property<string>("FechaNacimiento")
-                        .HasColumnType("nvarchar(max)");
-
-=======
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -52,25 +46,18 @@ namespace CitasMedicas.App.Persistencia.Migrations
                     b.Property<int>("Genero")
                         .HasColumnType("int");
 
->>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NumDoc")
                         .HasColumnType("nvarchar(max)");
 
-<<<<<<< HEAD
-                    b.Property<string>("NumTelefono")
-=======
                     b.Property<string>("NumeroTelefono")
->>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Personas");
-<<<<<<< HEAD
-=======
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("Persona");
                 });
@@ -83,7 +70,6 @@ namespace CitasMedicas.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("Paciente");
->>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
                 });
 #pragma warning restore 612, 618
         }

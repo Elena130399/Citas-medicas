@@ -8,6 +8,10 @@
     ".NETCoreApp,Version=v5.0": {
       "CitasMedicas.App.Consola/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
+=======
+          "CitasMedicas.App.Dominio": "1.0.0",
+>>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
           "CitasMedicas.App.Persistencia": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.0"
         },

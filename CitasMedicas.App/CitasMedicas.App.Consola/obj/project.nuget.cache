@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "/W5dyHzM0M/+/RDPhhNrNuimsrKdj5VFWqV+Ag9otqr510pZwGDKXaofGJ6rgZCeHj54CvmFDr7unnkqaXdl5Q==",
+=======
+  "dgSpecHash": "SPNRL6WwIt3FbxvbZVxCActLqxD7xMI4OKHSMRFJHWIzDU+FYwjNwReruiHskkwTAiSftjw3/D/rT/IMLrI4/Q==",
+>>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
   "success": true,
   "projectFilePath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Consola\\CitasMedicas.App.Consola.csproj",
   "expectedPackageFiles": [
