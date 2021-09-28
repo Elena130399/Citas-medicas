@@ -1,0 +1,12 @@
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\bin\Debug\net5.0\CitasMedicas.App.Dominio.deps.json
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\bin\Debug\net5.0\CitasMedicas.App.Dominio.dll
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\bin\Debug\net5.0\ref\CitasMedicas.App.Dominio.dll
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\bin\Debug\net5.0\CitasMedicas.App.Dominio.pdb
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\obj\Debug\net5.0\CitasMedicas.App.Dominio.csproj.AssemblyReference.cache
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\obj\Debug\net5.0\CitasMedicas.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\obj\Debug\net5.0\CitasMedicas.App.Dominio.AssemblyInfoInputs.cache
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\obj\Debug\net5.0\CitasMedicas.App.Dominio.AssemblyInfo.cs
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\obj\Debug\net5.0\CitasMedicas.App.Dominio.csproj.CoreCompileInputs.cache
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\obj\Debug\net5.0\CitasMedicas.App.Dominio.dll
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\obj\Debug\net5.0\ref\CitasMedicas.App.Dominio.dll
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Dominio\obj\Debug\net5.0\CitasMedicas.App.Dominio.pdb
