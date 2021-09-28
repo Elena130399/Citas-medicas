@@ -8,7 +8,7 @@ namespace CitasMedicas.App.Persistencia
        public DbSet<Persona> Personas {get;set;}
        public DbSet<Paciente> Pacientes {get;set;}
        
-       
+       //Prueba git
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
        {
            if (!optionsBuilder.IsConfigured)
