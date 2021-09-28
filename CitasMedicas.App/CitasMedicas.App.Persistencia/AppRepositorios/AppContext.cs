@@ -14,7 +14,9 @@ namespace CitasMedicas.App.Persistencia
            if (!optionsBuilder.IsConfigured)
            {
                optionsBuilder
-               .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = CitasMedicasData");
+                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = CitasMedicasData");
+                // Conexion por MSSQL visto en clase
+                //.UseSqlServer("Initial Catalog=HospiEnCasaData; Data Source=HOMELUNA; Integrated Security=true"); 
            }
        }
    } 
