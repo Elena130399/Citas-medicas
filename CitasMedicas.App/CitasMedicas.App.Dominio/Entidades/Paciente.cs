@@ -8,6 +8,6 @@ namespace CitasMedicas.App.Dominio
         public string Convenio{get;set;}
         public string Direccion{get;set;}
         public string Ciudad{get;set;}
-        //comentario
+        //comentarios
     }
 }
