@@ -8,7 +8,7 @@ namespace CitasMedicas.App.Persistencia
     {
         IEnumerable<Paciente> GetAllPacientes(); //metodo que retorna todos los pacientes
         Paciente AddPaciente(Paciente paciente);
-        IRepositorioPaciente UpdatePaciente(IRepositorioPaciente paciente)
+        IRepositorioPaciente UpdatePaciente(IRepositorioPaciente paciente);
         void DeletePaciente(int idPaciente);
         IRepositorioPaciente GetPaciente(int idPaciente);
     }
