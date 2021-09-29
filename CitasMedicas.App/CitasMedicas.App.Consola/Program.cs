@@ -23,7 +23,7 @@ namespace CitasMedicas.App.Consola
                 NumeroTelefono="3002152014",
                 Genero=Genero.Femenino,
                 Direccion="cra 41 22-20 sur",
-                Ciudad="Bogotá"
+                Ciudad="Medellín"
             };
             _repoPaciente.AddPaciente(paciente);
         }
