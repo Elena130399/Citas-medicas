@@ -5790,10 +5790,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-<<<<<<< HEAD
-=======
       "CitasMedicas.App.Dominio >= 1.0.0",
->>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
       "CitasMedicas.App.Persistencia >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0"
     ]
@@ -5823,12 +5820,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-<<<<<<< HEAD
-=======
             "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj": {
               "projectPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj"
             },
->>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
             "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Persistencia\\CitasMedicas.App.Persistencia.csproj": {
               "projectPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Persistencia\\CitasMedicas.App.Persistencia.csproj"
             }
@@ -5870,5 +5864,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Consola\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -26,12 +26,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-<<<<<<< HEAD
-=======
               "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj": {
                 "projectPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj"
               },
->>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
               "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Persistencia\\CitasMedicas.App.Persistencia.csproj": {
                 "projectPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Persistencia\\CitasMedicas.App.Persistencia.csproj"
               }
