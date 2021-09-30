@@ -7,6 +7,10 @@ namespace CitasMedicas.App.Persistencia
    {
        public DbSet<Persona> Personas {get;set;}
        public DbSet<Paciente> Pacientes {get;set;}
+       public DbSet<Sede> Sedes {get;set;}
+       public DbSet<Medico> Medicos {get;set;}
+       public DbSet<Agenda> Agendas {get;set;}
+       public DbSet<Ciudad> Ciudades {get;set;}
        
        
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

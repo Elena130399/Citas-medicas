@@ -1,22 +1,11 @@
 ﻿using System;
-<<<<<<< HEAD
-=======
 using CitasMedicas.App.Dominio;
 using CitasMedicas.App.Persistencia;
->>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
 
 namespace CitasMedicas.App.Consola
 {
     class Program
     {
-<<<<<<< HEAD
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
-=======
         private static IRepositorioPaciente _repoPaciente=new RepositorioPaciente(new Persistencia.AppContext());
         static void Main(string[] args)
         {
@@ -34,7 +23,7 @@ namespace CitasMedicas.App.Consola
                 NumeroTelefono="3002152014",
                 Genero=Genero.Femenino,
                 Direccion="cra 41 22-20 sur",
-                Ciudad="Bogotá"
+                Ciudad="Medellín"
             };
             _repoPaciente.AddPaciente(paciente);
         }
@@ -45,4 +34,3 @@ namespace CitasMedicas.App.Consola
         }  
     }
 }
->>>>>>> 8b331db5f3de762e9e9546d0efc251406e435797
