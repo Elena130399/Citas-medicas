@@ -8,5 +8,6 @@ namespace CitasMedicas.App.Dominio
         public string NombreSede{get;set;}
         public Ciudad Ciudad{get;set;} 
         //test
+
     }
 }
