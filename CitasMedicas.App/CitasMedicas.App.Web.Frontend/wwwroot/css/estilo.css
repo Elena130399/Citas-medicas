@@ -1,0 +1,36 @@
+#global{background-color:#000000;
+    border: 2px solid;
+    height: 860px;
+    width: 1024px }
+    
+    #cabecera{ background-color:#000000;
+    border: 1px solid;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    align="left";
+    height:150px;
+    width:1023px;}
+    
+    #menu{background-color:#FFF;
+    background-image:url(../imagenes/fondo.jpg); 
+     background-repeat: round;
+    border: 1px solid;
+    margin: 0px 0px 0px 0px;
+    height:614px;
+    width:780px;
+    float: left;}
+    
+    #cuerpo{background-color:#00F5F5;
+    border: 1px solid;
+    height: 614px;
+    width:230px;
+    float: right}
+    
+    #piedepagina{background-color:#FFFFFF;
+    border: 1px solid;
+    padding: 0px 0px 0px 0px;
+    margin: 10px 0px 10px 0px;
+    height: 70px;
+    width:1022px;
+    float:left}
+    

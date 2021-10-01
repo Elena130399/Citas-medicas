@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3OF67zjlxcEoGB5U7dFemh812FI3w22kjY/D/xw6RRfEZTpDkZWUvpQPAAWTjEaQf8ORPoj/sK7nIcPRiLVgkQ==",
+  "dgSpecHash": "A4kZ/pTFHUWn+6XrY46aifTqyxYHCpPbMgmDnFu1LdXjiRrZSNKsPIyvpIVQgn0nbXJTwAG9ZZ0s+WdTN2Xi1g==",
   "success": true,
-  "projectFilePath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Web.Frontend\\CitasMedicas.App.Web.Frontend.csproj",
+  "projectFilePath": "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Web.Frontend\\CitasMedicas.App.Web.Frontend.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
