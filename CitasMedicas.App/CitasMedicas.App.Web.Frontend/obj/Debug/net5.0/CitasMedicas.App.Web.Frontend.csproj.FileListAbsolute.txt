@@ -38,6 +38,9 @@ C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.pdb
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.genruntimeconfig.cache
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.csproj.CopyComplete
+<<<<<<< HEAD
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\Razor\Pages\Persona\Persona.cshtml.g.cs
+=======
 C:\CitasMedicas\Citas-medicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.csproj.AssemblyReference.cache
 C:\CitasMedicas\Citas-medicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.GeneratedMSBuildEditorConfig.editorconfig
 C:\CitasMedicas\Citas-medicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.AssemblyInfoInputs.cache
@@ -79,3 +82,4 @@ C:\CitasMedicas\Citas-medicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\bin
 C:\CitasMedicas\Citas-medicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.Views.pdb
 C:\CitasMedicas\Citas-medicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.genruntimeconfig.cache
 C:\CitasMedicas\Citas-medicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.csproj.CopyComplete
+>>>>>>> main
