@@ -9,6 +9,6 @@ namespace CitasMedicas.App.Dominio
         public string TipoMedico{get;set;}
         public string Agenda{get;set;}
         public string RegistroMedico{get;set;}
-       
+        public string Ciudad{get;set;}
     }
 }
