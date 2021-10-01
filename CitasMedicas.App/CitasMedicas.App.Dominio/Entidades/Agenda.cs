@@ -11,6 +11,5 @@ namespace CitasMedicas.App.Dominio
         public Medico Medico{get;set;}
         public string Nota{get;set;}
         public DateTime FechaCita{get;set;}
-        //Luis
     }
 }
