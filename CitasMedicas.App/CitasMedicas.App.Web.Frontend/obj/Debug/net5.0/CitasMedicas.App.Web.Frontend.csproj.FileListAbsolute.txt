@@ -38,3 +38,4 @@ C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.pdb
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.genruntimeconfig.cache
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\CitasMedicas.App.Web.Frontend.csproj.CopyComplete
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\Razor\Pages\Persona\Persona.cshtml.g.cs

@@ -144,6 +144,10 @@ namespace CitasMedicas.App.Persistencia.Migrations
                     b.Property<string>("Agenda")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Ciudad")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Medico_Ciudad");
+
                     b.Property<string>("Codigo")
                         .HasColumnType("nvarchar(max)");
 
