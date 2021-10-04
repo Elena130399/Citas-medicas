@@ -1,6 +1,7 @@
 ﻿using System;
 using CitasMedicas.App.Dominio;
 using CitasMedicas.App.Persistencia;
+using System.Collections.Generic;
 
 namespace CitasMedicas.App.Consola
 {
@@ -17,6 +18,7 @@ namespace CitasMedicas.App.Consola
             BuscarPaciente(1);
             AddMedico();
             BuscarMedico(2);
+            MostrarPacientes();
         }
 
         private static void AddPaciente()
@@ -39,6 +41,14 @@ namespace CitasMedicas.App.Consola
             Console.WriteLine("Nombre: "+paciente.Nombre+" "+paciente.Apellidos+"  Género: "+paciente.Genero);
         }
 
+        private static void MostrarPacientes(){
+            IEnumerable<Paciente> pacientes = _repoPaciente.GetAllPacientes();
+            foreach (var paciente in pacientes)
+            {
+                Console.WriteLine("Paciente: "+paciente.Nombre+" "+paciente.Apellidos);
+            }
+
+        }
 
 
         private static void AddMedico()
@@ -50,7 +60,10 @@ namespace CitasMedicas.App.Consola
                 NumeroTelefono="3104295302",
                 Genero=Genero.Masculino,
                 Direccion="cra 41 22-20 sur",
-                Especializacion="Dermatologo"
+                Especializacion="Dermatologo",
+                Codigo="1234",
+                RegistroMedico="RETHUS54321",
+                TipoMedico="EPS"
             };
             _repoMedico.AddMedico(medico);
             Console.WriteLine("Aca ingresamos el medico bien");
