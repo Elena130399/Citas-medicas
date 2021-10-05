@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CitasMedicas.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210930023129_migra13")]
-    partial class migra13
+    [Migration("20211004030357_Migra1003_01")]
+    partial class Migra1003_01
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,54 @@ namespace CitasMedicas.App.Persistencia.Migrations
                 .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
+
+            modelBuilder.Entity("CitasMedicas.App.Dominio.Agenda", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<DateTime>("FechaCita")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("MedicoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nota")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("PacienteId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SedeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicoId");
+
+                    b.HasIndex("PacienteId");
+
+                    b.HasIndex("SedeId");
+
+                    b.ToTable("Agendas");
+                });
+
+            modelBuilder.Entity("CitasMedicas.App.Dominio.Ciudad", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("NombreCiudad")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ciudades");
+                });
 
             modelBuilder.Entity("CitasMedicas.App.Dominio.Persona", b =>
                 {
@@ -56,7 +104,15 @@ namespace CitasMedicas.App.Persistencia.Migrations
                     b.Property<string>("NumeroTelefono")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("SedeId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("TieneEps")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("SedeId");
 
                     b.ToTable("Personas");
 
@@ -70,10 +126,15 @@ namespace CitasMedicas.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<int?>("CiudadId")
+                        .HasColumnType("int");
+
                     b.Property<string>("NombreSede")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CiudadId");
 
                     b.ToTable("Sedes");
                 });
@@ -85,19 +146,21 @@ namespace CitasMedicas.App.Persistencia.Migrations
                     b.Property<string>("Agenda")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Ciudad")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Medico_Ciudad");
+
                     b.Property<string>("Codigo")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Especializacion")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("SedeId")
-                        .HasColumnType("int");
+                    b.Property<string>("RegistroMedico")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TipoMedico")
                         .HasColumnType("nvarchar(max)");
-
-                    b.HasIndex("SedeId");
 
                     b.HasDiscriminator().HasValue("Medico");
                 });
@@ -109,16 +172,60 @@ namespace CitasMedicas.App.Persistencia.Migrations
                     b.Property<string>("Ciudad")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("MedicoId")
+                        .HasColumnType("int");
+
+                    b.HasIndex("MedicoId");
+
                     b.HasDiscriminator().HasValue("Paciente");
                 });
 
-            modelBuilder.Entity("CitasMedicas.App.Dominio.Medico", b =>
+            modelBuilder.Entity("CitasMedicas.App.Dominio.Agenda", b =>
+                {
+                    b.HasOne("CitasMedicas.App.Dominio.Medico", "Medico")
+                        .WithMany()
+                        .HasForeignKey("MedicoId");
+
+                    b.HasOne("CitasMedicas.App.Dominio.Paciente", "Paciente")
+                        .WithMany()
+                        .HasForeignKey("PacienteId");
+
+                    b.HasOne("CitasMedicas.App.Dominio.Sede", "Sede")
+                        .WithMany()
+                        .HasForeignKey("SedeId");
+
+                    b.Navigation("Medico");
+
+                    b.Navigation("Paciente");
+
+                    b.Navigation("Sede");
+                });
+
+            modelBuilder.Entity("CitasMedicas.App.Dominio.Persona", b =>
                 {
                     b.HasOne("CitasMedicas.App.Dominio.Sede", "Sede")
                         .WithMany()
                         .HasForeignKey("SedeId");
 
                     b.Navigation("Sede");
+                });
+
+            modelBuilder.Entity("CitasMedicas.App.Dominio.Sede", b =>
+                {
+                    b.HasOne("CitasMedicas.App.Dominio.Ciudad", "Ciudad")
+                        .WithMany()
+                        .HasForeignKey("CiudadId");
+
+                    b.Navigation("Ciudad");
+                });
+
+            modelBuilder.Entity("CitasMedicas.App.Dominio.Paciente", b =>
+                {
+                    b.HasOne("CitasMedicas.App.Dominio.Medico", "Medico")
+                        .WithMany()
+                        .HasForeignKey("MedicoId");
+
+                    b.Navigation("Medico");
                 });
 #pragma warning restore 612, 618
         }

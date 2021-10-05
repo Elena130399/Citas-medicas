@@ -54,7 +54,48 @@ namespace CitasMedicas.App.Persistencia
            }
              return pacienteEncontrado; //retorna el paciente encontrado
             
-          }  
+          }
+
+        /*Paciente IRepositorioPaciente.AsignarMedico (int idPaciente, int idMedico)
+        {
+          var pacienteEncontrado = _appContext.Pacientes.Find(idPaciente);
+          if (pacienteEncontrado != null)
+          {
+            var medicoEncontrado = _appContext.Medicos.Find(idMedico);
+            if (medicoEncontrado != null)
+            {
+              pacienteEncontrado.Medico = medicoEncontrado;
+              _appContext.SaveChanges();
+            }
+            return medicoEncontrado;
+
+          }
+
+        }*/
+
+        Medico IRepositorioPaciente.AsignarMedico(int idPaciente, int idMedico)
+        {
+            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
+            if (pacienteEncontrado != null)
+            {
+                var medicoEncontrado = _appContext.Medicos.FirstOrDefault(m => m.Id == idMedico);
+                if (medicoEncontrado != null)
+                {
+                    pacienteEncontrado.Medico = medicoEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return medicoEncontrado;
+            }
+            return null;
+
+        }
+
+
+
+
+
+
+
      }
 }
 // implementa la interfaz

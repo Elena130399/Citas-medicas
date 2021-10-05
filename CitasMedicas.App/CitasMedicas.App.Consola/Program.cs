@@ -15,17 +15,18 @@ namespace CitasMedicas.App.Consola
         {
             Console.WriteLine("Hello World!");
             AddPaciente();
-            BuscarPaciente(1);
+            //BuscarPaciente(1);
             AddMedico();
-            BuscarMedico(2);
-            MostrarPacientes();
+            //BuscarMedico(2);
+            //MostrarPacientes();
+            AsignarMedico();
         }
 
         private static void AddPaciente()
         {
             var paciente =new Paciente
             {
-                Nombre="Adriana",
+                Nombre="Paciente Adriana",
                 Apellidos="Vargas",
                 NumeroTelefono="3002152014",
                 Genero=Genero.Femenino,
@@ -77,6 +78,14 @@ namespace CitasMedicas.App.Consola
             Console.WriteLine("Nombre: "+medico.Nombre);
             //+" "+medico.Apellidos); //+"  Género: "+medico.Genero);
         }  
+
+        
+        private static void AsignarMedico()
+        {
+            var medico = _repoPaciente.AsignarMedico(1, 2);
+            Console.WriteLine("Se asignó el medico: "+medico.Nombre+" "+medico.Apellidos );
+        }
+        
 
 
     }

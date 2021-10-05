@@ -70,3 +70,4 @@ C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\bin\Debug\net5.0\
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\bin\Debug\net5.0\CitasMedicas.App.Persistencia.dll
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\bin\Debug\net5.0\CitasMedicas.App.Dominio.pdb
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\bin\Debug\net5.0\CitasMedicas.App.Persistencia.pdb
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web.Frontend\obj\Debug\net5.0\Razor\Pages\Pacientes\Index1.cshtml.g.cs
