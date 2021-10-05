@@ -12,7 +12,9 @@ namespace CitasMedicas.App.Frontend.Pages.Pacientes
 {
     public class Index1Model : PageModel
     {
-        private readonly IRepositorioPaciente _repoPaciente;
+        //private readonly IRepositorioPaciente _repoPaciente;
+        private readonly IRepositorioPaciente _repoPaciente=new RepositorioPaciente(new Persistencia.AppContext());
+
         public IEnumerable<Paciente> pacientes {get;set;}
         public Index1Model(IRepositorioPaciente repoPaciente)
         {

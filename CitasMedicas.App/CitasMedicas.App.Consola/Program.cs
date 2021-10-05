@@ -19,7 +19,7 @@ namespace CitasMedicas.App.Consola
             AddMedico();
             //BuscarMedico(2);
             //MostrarPacientes();
-            AsignarMedico();
+            //AsignarMedico();
         }
 
         private static void AddPaciente()
