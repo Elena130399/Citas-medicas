@@ -7,11 +7,14 @@ namespace CitasMedicas.App.Persistencia
 {
      public class RepositorioMedico : IRepositorioMedico
      {
+          private readonly AppContext _appContext = new AppContext();
+          /*
           private readonly AppContext _appContext; //recomendable por seguridad
           public RepositorioMedico(AppContext appContext) 
           {
             _appContext=appContext; //Necesitamos definir un contexto
           }
+          */
           Medico IRepositorioMedico.AddMedico(Medico medico)
           {
             var medicoAdicionado= _appContext.Medicos.Add(medico);

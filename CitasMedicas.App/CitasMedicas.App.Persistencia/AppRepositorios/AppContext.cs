@@ -19,6 +19,7 @@ namespace CitasMedicas.App.Persistencia
            {
                optionsBuilder
                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = CitasMedicasData");
+               //.UseSqlServer("Initial Catalog=NOMBREDB; Data Source=NOMBRE_SERVIDOR; Integrated Security=true");
            }
        }
    }
