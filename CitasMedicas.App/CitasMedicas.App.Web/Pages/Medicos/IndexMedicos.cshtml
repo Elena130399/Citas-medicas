@@ -1,0 +1,33 @@
+﻿@page
+@model CitasMedicas.App.Web.Pages.IndexMedicosModel
+@{
+}
+<h1>Listado de Medicos</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Telefono</th>
+            <th colspan=2 scope="col">Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var medico in Model.medicos)
+        {
+            <tr>
+                <td>@medico.Nombre</td>
+                 
+                <td>@medico.Apellidos</td> 
+                <td>@medico.NumeroTelefono</td>
+                <td><a class="btn btn-secondary" asp-page="" asp-route-id="@medico.Id">Detalle</a></td>
+                <td><a class="btn btn-secondary" asp-page="" asp-route-id="@medico.Id">Editar</a></td>
+                
+            </tr>
+        }
+    </tbody>
+
+
+</table>

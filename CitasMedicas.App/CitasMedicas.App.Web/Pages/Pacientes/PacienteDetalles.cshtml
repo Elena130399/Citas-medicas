@@ -1,0 +1,29 @@
+﻿@page
+@model CitasMedicas.App.Web.Pages.Pacientes.PacienteDetallesModel
+@{
+}
+
+
+<h1>Detalle de Pacientes</h1>
+
+<table class="table table-striped">
+        <tr>
+            <th scope="col">Nombre</th>
+            <td>@Model.paciente.Nombre</td>
+        </tr>
+        <tr>
+            <th scope="col">Apellidos</th>
+            <td>@Model.paciente.Apellidos</td> 
+        </tr>
+        <tr>
+            <th scope="col">Genero</th>
+            <td>@Model.paciente.Genero</td>
+        </tr>
+        <tr>
+            <th scope="col">Fecha de nacimiento</th>
+            <td>@Model.paciente.FechaNacimiento</td>
+        </tr>
+
+</table>
+
+<a class="btn btn-secondary" asp-page="./Index1">Volver</a>
