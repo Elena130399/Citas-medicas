@@ -6,7 +6,7 @@ namespace CitasMedicas.App.Dominio
     {
         public int Id {get;set;}
         public string Ciudad{get;set;}
-        //falta genero  como se agrega como tipo enum??
+        public Medico Medico{get;set;}
         
     }
 }

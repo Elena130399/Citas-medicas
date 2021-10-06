@@ -7,11 +7,20 @@ namespace CitasMedicas.App.Persistencia
 {
      public class RepositorioPaciente : IRepositorioPaciente
      {
+          /*
           private readonly AppContext _appContext; //recomendable por seguridad
-          public RepositorioPaciente(AppContext appContext) 
+          */
+
+          private readonly AppContext _appContext = new AppContext();
+          
+          /*public RepositorioPaciente(AppContext appContext) 
           {
-            _appContext=appContext; //Necesitamos definir un contexto
+            _appContext=appContext; 
           }
+          */
+
+          
+
           Paciente IRepositorioPaciente.AddPaciente(Paciente paciente)
           {
             var pacienteAdicionado= _appContext.Pacientes.Add(paciente);
@@ -54,7 +63,48 @@ namespace CitasMedicas.App.Persistencia
            }
              return pacienteEncontrado; //retorna el paciente encontrado
             
-          }  
+          }
+
+        /*Paciente IRepositorioPaciente.AsignarMedico (int idPaciente, int idMedico)
+        {
+          var pacienteEncontrado = _appContext.Pacientes.Find(idPaciente);
+          if (pacienteEncontrado != null)
+          {
+            var medicoEncontrado = _appContext.Medicos.Find(idMedico);
+            if (medicoEncontrado != null)
+            {
+              pacienteEncontrado.Medico = medicoEncontrado;
+              _appContext.SaveChanges();
+            }
+            return medicoEncontrado;
+
+          }
+
+        }*/
+
+        Medico IRepositorioPaciente.AsignarMedico(int idPaciente, int idMedico)
+        {
+            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
+            if (pacienteEncontrado != null)
+            {
+                var medicoEncontrado = _appContext.Medicos.FirstOrDefault(m => m.Id == idMedico);
+                if (medicoEncontrado != null)
+                {
+                    pacienteEncontrado.Medico = medicoEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return medicoEncontrado;
+            }
+            return null;
+
+        }
+
+
+
+
+
+
+
      }
 }
 // implementa la interfaz

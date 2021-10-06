@@ -7,11 +7,14 @@ namespace CitasMedicas.App.Persistencia
 {
      public class RepositorioMedico : IRepositorioMedico
      {
+          private readonly AppContext _appContext = new AppContext();
+          /*
           private readonly AppContext _appContext; //recomendable por seguridad
           public RepositorioMedico(AppContext appContext) 
           {
             _appContext=appContext; //Necesitamos definir un contexto
           }
+          */
           Medico IRepositorioMedico.AddMedico(Medico medico)
           {
             var medicoAdicionado= _appContext.Medicos.Add(medico);
@@ -31,7 +34,6 @@ namespace CitasMedicas.App.Persistencia
           IEnumerable <Medico> IRepositorioMedico.GetAllMedicos  ()
           {
             return _appContext.Medicos;
-             
           }
 
         Medico IRepositorioMedico.GetMedico  (int idMedico)
@@ -50,6 +52,11 @@ namespace CitasMedicas.App.Persistencia
                 medicoEncontrado.NumeroTelefono=medico.NumeroTelefono;
                 medicoEncontrado.Direccion=medico.Direccion;
                 medicoEncontrado.Ciudad=medico.Ciudad;
+                medicoEncontrado.Codigo=medico.Codigo;
+                medicoEncontrado.Especializacion=medico.Especializacion;
+                medicoEncontrado.RegistroMedico=medico.RegistroMedico;
+                medicoEncontrado.TipoMedico=medico.TipoMedico;//es de EPS
+
                 _appContext.SaveChanges();        
            }
              return medicoEncontrado; //retorna el medico encontrado

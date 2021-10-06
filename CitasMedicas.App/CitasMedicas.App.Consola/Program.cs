@@ -1,29 +1,33 @@
 ﻿using System;
 using CitasMedicas.App.Dominio;
 using CitasMedicas.App.Persistencia;
+using System.Collections.Generic;
 
 namespace CitasMedicas.App.Consola
 {
     class Program
     {
 
-        private static IRepositorioPaciente _repoPaciente=new RepositorioPaciente(new Persistencia.AppContext());
-        private static IRepositorioMedico _repoMedico=new RepositorioMedico(new Persistencia.AppContext());
+        //private static IRepositorioPaciente _repoPaciente=new RepositorioPaciente(new Persistencia.AppContext());
+        private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente();
+        private static IRepositorioMedico _repoMedico=new RepositorioMedico();
 
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             AddPaciente();
-            BuscarPaciente(1);
+            //BuscarPaciente(1);
             AddMedico();
-            BuscarMedico(2);
+            //BuscarMedico(2);
+            //MostrarPacientes();
+            AsignarMedico();
         }
 
         private static void AddPaciente()
         {
             var paciente =new Paciente
             {
-                Nombre="Adriana",
+                Nombre="Paciente Adriana",
                 Apellidos="Vargas",
                 NumeroTelefono="3002152014",
                 Genero=Genero.Femenino,
@@ -39,6 +43,14 @@ namespace CitasMedicas.App.Consola
             Console.WriteLine("Nombre: "+paciente.Nombre+" "+paciente.Apellidos+"  Género: "+paciente.Genero);
         }
 
+        private static void MostrarPacientes(){
+            IEnumerable<Paciente> pacientes = _repoPaciente.GetAllPacientes();
+            foreach (var paciente in pacientes)
+            {
+                Console.WriteLine("Paciente: "+paciente.Nombre+" "+paciente.Apellidos);
+            }
+
+        }
 
 
         private static void AddMedico()
@@ -50,7 +62,10 @@ namespace CitasMedicas.App.Consola
                 NumeroTelefono="3104295302",
                 Genero=Genero.Masculino,
                 Direccion="cra 41 22-20 sur",
-                Especializacion="Dermatologo"
+                Especializacion="Dermatologo",
+                Codigo="1234",
+                RegistroMedico="RETHUS54321",
+                TipoMedico="EPS"
             };
             _repoMedico.AddMedico(medico);
             Console.WriteLine("Aca ingresamos el medico bien");
@@ -64,6 +79,14 @@ namespace CitasMedicas.App.Consola
             Console.WriteLine("Nombre: "+medico.Nombre);
             //+" "+medico.Apellidos); //+"  Género: "+medico.Genero);
         }  
+
+        
+        private static void AsignarMedico()
+        {
+            var medico = _repoPaciente.AsignarMedico(1, 2);
+            Console.WriteLine("Se asignó el medico: "+medico.Nombre+" "+medico.Apellidos );
+        }
+        
 
 
     }
