@@ -13,7 +13,6 @@ namespace CitasMedicas.App.Dominio
         public string FechaNacimiento{get;set;}
         public Genero Genero{get;set;}
         public bool TieneEps{get;set;}
-        public Sede Sede{get;set;}
          
     }
 }
