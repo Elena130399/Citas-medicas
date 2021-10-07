@@ -5796,19 +5796,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\FedGomez\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Consola\\CitasMedicas.App.Consola.csproj",
+      "projectUniqueName": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Consola\\CitasMedicas.App.Consola.csproj",
       "projectName": "CitasMedicas.App.Consola",
-      "projectPath": "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Consola\\CitasMedicas.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Consola\\obj\\",
+      "projectPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Consola\\CitasMedicas.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\FedGomez\\.nuget\\packages\\",
+      "outputPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\FedGomez\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5820,11 +5820,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj": {
-              "projectPath": "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj"
+            "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj": {
+              "projectPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj"
             },
-            "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Persistencia\\CitasMedicas.App.Persistencia.csproj": {
-              "projectPath": "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Persistencia\\CitasMedicas.App.Persistencia.csproj"
+            "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Persistencia\\CitasMedicas.App.Persistencia.csproj": {
+              "projectPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Persistencia\\CitasMedicas.App.Persistencia.csproj"
             }
           }
         }
@@ -5861,7 +5861,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
