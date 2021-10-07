@@ -31,7 +31,7 @@ namespace CitasMedicas.App.Web.Pages.Pacientes
             {
                 _repoPaciente.AddPaciente(paciente);
                 return RedirectToPage("Index1");
-
+                
 
             }else
             {

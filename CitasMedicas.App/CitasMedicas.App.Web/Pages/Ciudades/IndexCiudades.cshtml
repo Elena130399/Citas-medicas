@@ -1,0 +1,30 @@
+﻿@page
+@model CitasMedicas.App.Web.Pages.IndexCiudadesModel
+@{
+}
+<h1>Listado de Ciudades</h1>
+
+<a class="btn btn-primary" asp-page="./CreateCiudades">Crear Ciudades</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th colspan=2 scope="col">Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var ciudad in Model.ciudades)
+        {
+            <tr>
+                <td>@ciudad.NombreCiudad</td>
+                
+                <td><a class="btn btn-secondary" asp-page="./CiudadDetalles" asp-route-id="@ciudad.Id">Detalle</a></td>
+                <td><a class="btn btn-secondary" asp-page="" asp-route-id="@ciudad.Id">Editar</a></td>
+                
+            </tr>
+        }
+    </tbody>
+
+
+</table>
