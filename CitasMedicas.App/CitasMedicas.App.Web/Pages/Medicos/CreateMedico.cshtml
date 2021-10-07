@@ -1,0 +1,15 @@
+﻿@page
+@using CitasMedicas.App.Dominio
+@model CitasMedicas.App.Web.Pages.Medicos.CreateMedicoModel
+
+@{
+}
+
+<h1>Crear Un Nuevo Medico</h1>
+<form method="POST">
+    <div class="form-group">
+        <label asp-for="medico.Nombre" class="form-control"></label>
+        <input asp-for="medico.Nombre" class="form-control">
+        <span asp-validation-for="medico.Nombre" class="text-danger"></span>
+    </div>
+</form>
