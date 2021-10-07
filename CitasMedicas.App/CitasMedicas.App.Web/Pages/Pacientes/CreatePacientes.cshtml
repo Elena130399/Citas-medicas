@@ -1,0 +1,18 @@
+﻿@page
+@using CitasMedicas.App.Dominio
+@model CitasMedicas.App.Web.Pages.Pacientes.CreatePacientesModel
+
+@{
+}
+
+<h1>Crear Un Nuevo Paciente</h1>
+<form method="POST">
+    <div class="form-group">
+        <label asp-for="paciente.Nombre" class="form-control"></label>
+        <input asp-for="paciente.Nombre" class="form-control">
+        <span asp-validation-for="paciente.Nombre" class="text-danger"></span>
+    </div>
+</form>
+
+
+
