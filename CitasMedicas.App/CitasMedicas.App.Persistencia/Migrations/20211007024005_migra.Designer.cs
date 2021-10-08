@@ -4,14 +4,16 @@ using CitasMedicas.App.Persistencia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CitasMedicas.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    partial class AppContextModelSnapshot : ModelSnapshot
+    [Migration("20211007024005_migra")]
+    partial class migra
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -87,8 +89,8 @@ namespace CitasMedicas.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("FechaNacimiento")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("FechaNacimiento")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Genero")
                         .HasColumnType("int");
@@ -167,6 +169,11 @@ namespace CitasMedicas.App.Persistencia.Migrations
                     b.Property<string>("Ciudad")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("MedicoId")
+                        .HasColumnType("int");
+
+                    b.HasIndex("MedicoId");
+
                     b.HasDiscriminator().HasValue("Paciente");
                 });
 
@@ -207,6 +214,15 @@ namespace CitasMedicas.App.Persistencia.Migrations
                         .HasForeignKey("SedeId");
 
                     b.Navigation("Sede");
+                });
+
+            modelBuilder.Entity("CitasMedicas.App.Dominio.Paciente", b =>
+                {
+                    b.HasOne("CitasMedicas.App.Dominio.Medico", "Medico")
+                        .WithMany()
+                        .HasForeignKey("MedicoId");
+
+                    b.Navigation("Medico");
                 });
 #pragma warning restore 612, 618
         }

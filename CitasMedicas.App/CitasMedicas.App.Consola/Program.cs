@@ -11,6 +11,7 @@ namespace CitasMedicas.App.Consola
         //private static IRepositorioPaciente _repoPaciente=new RepositorioPaciente(new Persistencia.AppContext());
         private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente();
         private static IRepositorioMedico _repoMedico=new RepositorioMedico();
+        private static IRepositorioCiudad _repoCiudad=new RepositorioCiudad();
 
         static void Main(string[] args)
         {
@@ -20,7 +21,8 @@ namespace CitasMedicas.App.Consola
             AddMedico();
             //BuscarMedico(2);
             //MostrarPacientes();
-            AsignarMedico();
+            //AsignarMedico();
+            AddCiudad();
         }
 
         private static void AddPaciente()
@@ -81,12 +83,28 @@ namespace CitasMedicas.App.Consola
         }  
 
         
+        /*
         private static void AsignarMedico()
         {
             var medico = _repoPaciente.AsignarMedico(1, 2);
             Console.WriteLine("Se asignó el medico: "+medico.Nombre+" "+medico.Apellidos );
         }
-        
+        */
+
+
+        private static void AddCiudad()
+        {
+            var ciudad =new Ciudad
+            {
+                NombreCiudad="Medellin"
+            };
+            _repoCiudad.AddCiudad(ciudad);
+        }
+
+
+
+
+
 
 
     }
