@@ -1,0 +1,61 @@
+﻿@page
+@using CitasMedicas.App.Dominio
+@model CitasMedicas.App.Web.Pages.Pacientes.EditPacienteModel
+@{
+}
+
+<h1>Editar Paciente: @Model.paciente.Nombre</h1>
+<form method="POST">
+    <div class="form-group">
+        <label asp-for="paciente.Id"></label>
+        <input asp-for="paciente.Id" class="form-control" readonly>
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.Nombre"></label>
+        <input asp-for="paciente.Nombre" class="form-control">
+    </div>    
+    <div class="form-group">
+        <label asp-for="paciente.Apellidos"></label>
+        <input asp-for="paciente.Apellidos" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.NumDoc"></label>
+        <input asp-for="paciente.NumDoc" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.NumeroTelefono"></label>
+        <input asp-for="paciente.NumeroTelefono" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.Direccion"></label>
+        <input asp-for="paciente.Direccion" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.Correo"></label>
+        <input asp-for="paciente.Correo" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.FechaNacimiento"></label>
+        <input asp-for="paciente.FechaNacimiento" class="form-control" type="date" value="2000-01-01">
+    </div>
+    <div class="form-group">
+        <label asp-for="paciente.Genero"></label>
+        <select asp-items="Html.GetEnumSelectList<Genero>()" class="form-control"></select>
+    </div>
+    <!--
+    
+    <div class="form-group">
+        <label asp-for="paciente.TieneEps"></label>
+        <select asp-for="paciente.TieneEps" class="form-control form-select form-select-sm" aria-label=".form-select-sm example">
+            <option selected value="0">Si Tiene EPS</option>
+            <option value="1">No Tiene EPS</option>
+        </select>
+    </div>
+    -->
+
+    <button type="submit" class="btn btn-primary" >Guardar</button>
+
+</form>
+
+<a class="btn btn-secondary" asp-page="./Index1" >Volver</a>
+
