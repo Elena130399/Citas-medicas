@@ -11,7 +11,7 @@ namespace CitasMedicas.App.Persistencia
         Paciente UpdatePaciente(Paciente paciente);
         void DeletePaciente(int idPaciente);
         Paciente GetPaciente(int idPaciente);
-        Medico AsignarMedico(int idPaciente, int idMedico);
+        //Medico AsignarMedico(int idPaciente, int idMedico);
     }
 }
 //Interfaz: Conjunto de métodos-encabe

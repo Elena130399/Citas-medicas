@@ -21,7 +21,7 @@ namespace CitasMedicas.App.Consola
             AddMedico();
             //BuscarMedico(2);
             //MostrarPacientes();
-            AsignarMedico();
+            //AsignarMedico();
             AddCiudad();
         }
 
@@ -83,12 +83,15 @@ namespace CitasMedicas.App.Consola
         }  
 
         
+        /*
         private static void AsignarMedico()
         {
             var medico = _repoPaciente.AsignarMedico(1, 2);
             Console.WriteLine("Se asignó el medico: "+medico.Nombre+" "+medico.Apellidos );
         }
-        
+        */
+
+
         private static void AddCiudad()
         {
             var ciudad =new Ciudad
