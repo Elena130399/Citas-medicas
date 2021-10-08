@@ -11,7 +11,7 @@
             <th scope="col">Nombre</th>
             <th scope="col">Apellidos</th>
             <th scope="col">Telefono</th>
-            <th colspan=2 scope="col">Acciones</th>
+            <th colspan=3 scope="col">Acciones</th>
         </tr>
     </thead>
 
@@ -24,7 +24,8 @@
                 <td>@paciente.Apellidos</td> 
                 <td>@paciente.NumeroTelefono</td>
                 <td><a class="btn btn-secondary" asp-page="./PacienteDetalles" asp-route-id="@paciente.Id">Detalle</a></td>
-                <td><a class="btn btn-secondary" asp-page="" asp-route-id="@paciente.Id">Editar</a></td>
+                <td><a class="btn btn-secondary" asp-page="./EditPaciente" asp-route-id="@paciente.Id">Editar</a></td>
+                <td><a class="btn btn-secondary" asp-page="./DeletePaciente" asp-route-id="@paciente.Id">Eliminar</a></td>
                 
             </tr>
         }

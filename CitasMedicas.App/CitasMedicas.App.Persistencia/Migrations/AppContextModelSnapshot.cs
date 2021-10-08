@@ -167,11 +167,6 @@ namespace CitasMedicas.App.Persistencia.Migrations
                     b.Property<string>("Ciudad")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("MedicoId")
-                        .HasColumnType("int");
-
-                    b.HasIndex("MedicoId");
-
                     b.HasDiscriminator().HasValue("Paciente");
                 });
 
@@ -212,15 +207,6 @@ namespace CitasMedicas.App.Persistencia.Migrations
                         .HasForeignKey("SedeId");
 
                     b.Navigation("Sede");
-                });
-
-            modelBuilder.Entity("CitasMedicas.App.Dominio.Paciente", b =>
-                {
-                    b.HasOne("CitasMedicas.App.Dominio.Medico", "Medico")
-                        .WithMany()
-                        .HasForeignKey("MedicoId");
-
-                    b.Navigation("Medico");
                 });
 #pragma warning restore 612, 618
         }

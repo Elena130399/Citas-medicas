@@ -155,5 +155,7 @@ C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pag
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pages\Medicos\EditMedico.cshtml.g.cs
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pages\Medicos\MedicoDetalles.cshtml.g.cs
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pages\Pacientes\CreatePacientes.cshtml.g.cs
-C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pages\Pacientes\EditPacientes.cshtml.g.cs
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pages\Ciudades\IndexCiudades.cshtml.g.cs
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pages\Pacientes\EditPaciente.cshtml.g.cs
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pages\Pacientes\DeletePaciente.cshtml.g.cs
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pages\Medicos\DeleteMedico.cshtml.g.cs
