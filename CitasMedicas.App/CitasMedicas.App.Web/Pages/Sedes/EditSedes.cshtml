@@ -1,0 +1,29 @@
+﻿@page
+@using CitasMedicas.App.Dominio
+@model CitasMedicas.App.Web.Pages.Sedes.EditSedeModel
+@{
+}
+
+<h1>Editar Sede</h1>
+<form method="POST">
+
+    <div class="form-group">
+        <label asp-for="sede.Id"></label>
+        <input asp-for="sede.Id" class="form-control" readonly>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="sede.NombreSede"></label>
+        <input asp-for="sede.NombreSede" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="sede.Ciudad"></label>
+        <input asp-for="sede.Ciudad" class="form-control">
+    </div>
+
+
+ <button type="submit" class="btn btn-primary" >Guardar</button>
+
+</form>
+
+<a class="btn btn-secondary" asp-page="./IndexSedes" >Volver</a>
