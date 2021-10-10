@@ -4,7 +4,7 @@
 }
 <h1>Listado de Ciudades</h1>
 
-<a class="btn btn-primary" asp-page="./CreateCiudades">Crear Ciudades</a>
+<a class="btn btn-primary" asp-page="./CreateCiudad">Crear Ciudad</a>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -19,8 +19,8 @@
             <tr>
                 <td>@ciudad.NombreCiudad</td>
                 
-                <td><a class="btn btn-secondary" asp-page="./CiudadDetalles" asp-route-id="@ciudad.Id">Detalle</a></td>
-                <td><a class="btn btn-secondary" asp-page="" asp-route-id="@ciudad.Id">Editar</a></td>
+                <td><a class="btn btn-secondary" asp-page="./EditCiudad" asp-route-id="@ciudad.Id">Editar</a></td>
+                <td><a class="btn btn-secondary" asp-page="./DeleteCiudad" asp-route-id="@ciudad.Id">Eliminar</a></td>
                 
             </tr>
         }
