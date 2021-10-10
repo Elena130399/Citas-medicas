@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+iHNwbEkR1lZtRLjY+jWYIT7qtKnd5KW1FKK2ygCGU+gjZzk/aSBsgXQHlT8x1V2NdQ8+JEMZm/MKoJyPGoKNQ==",
+  "dgSpecHash": "Yz9pZFJZ1aMLok/cTRHseN2ExlpCi7v7ufwyB0d/0v9T0tpVE4JTdMCC4wvVe7pEs0cHP1Xg4NwA5haeO+WhLA==",
   "success": true,
   "projectFilePath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\FedGomez\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
