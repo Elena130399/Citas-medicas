@@ -5733,7 +5733,8 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "CitasMedicas.App.Dominio >= 1.0.0",
-      "CitasMedicas.App.Persistencia >= 1.0.0"
+      "CitasMedicas.App.Persistencia >= 1.0.0",
+      "System.ComponentModel.Annotations >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -5779,6 +5780,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
