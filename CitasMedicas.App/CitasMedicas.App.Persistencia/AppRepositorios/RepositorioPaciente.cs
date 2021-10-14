@@ -71,7 +71,7 @@ namespace CitasMedicas.App.Persistencia
 
         }*/
 
-       /*
+       
         Medico IRepositorioPaciente.AsignarMedico(int idPaciente, int idMedico)
         {
             var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
@@ -89,7 +89,7 @@ namespace CitasMedicas.App.Persistencia
 
         }
 
-        */
+        
 
 
 

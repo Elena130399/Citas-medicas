@@ -6,7 +6,7 @@ namespace CitasMedicas.App.Dominio
     {
 
         public string Ciudad{get;set;}
-        //public Medico Medico{get;set;}
+        public Medico Medico{get;set;}
         
     }
 }
