@@ -9,7 +9,7 @@ namespace CitasMedicas.App.Dominio
 
 
         [Required(ErrorMessage ="Nombre es requerido")]
-        [StringLength(20, ErrorMessage = "La longitud máxima es 20 caracteres") ]
+        [StringLength(50, ErrorMessage = "La longitud máxima es 20 caracteres") ]
         public string Nombre{get;set;}
         
         public string Apellidos{get;set;}
