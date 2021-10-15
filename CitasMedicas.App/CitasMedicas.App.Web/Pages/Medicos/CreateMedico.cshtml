@@ -11,19 +11,26 @@
     <div class="form-group">
         <label asp-for="medico.Nombre"></label>
         <input asp-for="medico.Nombre" class="form-control">
+      
+        <span class="text-danger" asp-validation-for="medico.Nombre" ></span>
     </div>
 
 <div class="form-group">
         <label asp-for="medico.Apellidos"></label>
         <input asp-for="medico.Apellidos" class="form-control">
+       
+        <span class="text-danger" asp-validation-for="medico.Apellidos" ></span>
     </div>
     <div class="form-group">
         <label asp-for="medico.NumDoc"></label>
         <input asp-for="medico.NumDoc" class="form-control">
+        <span class="text-danger" asp-validation-for="medico.NumDoc" ></span>
     </div>
     <div class="form-group">
         <label asp-for="medico.NumeroTelefono"></label>
         <input asp-for="medico.NumeroTelefono" class="form-control">
+
+        <span class="text-danger" asp-validation-for="medico.NumeroTelefono" ></span>
     </div>
     <div class="form-group">
         <label asp-for="medico.Direccion"></label>
@@ -32,6 +39,7 @@
     <div class="form-group">
         <label asp-for="medico.Correo"></label>
         <input asp-for="medico.Correo" class="form-control">
+        <span class="text-danger" asp-validation-for="medico.Correo" ></span>
     </div>
     <div class="form-group">
         <label asp-for="medico.FechaNacimiento"></label>
@@ -47,6 +55,8 @@
     <div class="form-group">
         <label asp-for="medico.Codigo" ></label>
         <input asp-for="medico.Codigo" class="form-control">
+        <span class="text-danger" asp-validation-for="medico.Codigo" ></span>
+
     </div>
     <div class="form-group">
         <label asp-for="medico.Especializacion" ></label>
@@ -55,11 +65,13 @@
     <div class="form-group">
         <label asp-for="medico.TipoMedico" ></label>
         <input asp-for="medico.TipoMedico" class="form-control">
+        <span class="text-danger" asp-validation-for="medico.TipoMedico" ></span>
     </div>
 
     <div class="form-group">
         <label asp-for="medico.RegistroMedico" ></label>
         <input asp-for="medico.RegistroMedico" class="form-control">
+        <span class="text-danger" asp-validation-for="medico.RegistroMedico" ></span>
     </div>
 
     <button type="submit" class="btn btn-primary" >Crear Medico</button>

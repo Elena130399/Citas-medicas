@@ -34,6 +34,7 @@
     <div class="form-group">
         <label asp-for="paciente.Correo"></label>
         <input asp-for="paciente.Correo" class="form-control">
+        <span class="text-danger" asp-validation-for="paciente.Correo" ></span>
     </div>
     <div class="form-group">
         <label asp-for="paciente.FechaNacimiento"></label>
