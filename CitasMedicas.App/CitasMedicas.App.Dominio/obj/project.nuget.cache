@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+iHNwbEkR1lZtRLjY+jWYIT7qtKnd5KW1FKK2ygCGU+gjZzk/aSBsgXQHlT8x1V2NdQ8+JEMZm/MKoJyPGoKNQ==",
+  "dgSpecHash": "gE7VjQCP8inrFAd3SMjg5ZbWZ8GRHoC71Td+OpVViTB29MnGeQxRUS12syb2ACnXb3ixXvDkm3XBrvSCd3bJVQ==",
   "success": true,
-  "projectFilePath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\felicidad\\CITAS MEDICAS\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
