@@ -1,0 +1,66 @@
+﻿@page
+@using CitasMedicas.App.Dominio
+@model CitasMedicas.App.Web.Pages.Agendas.AgendarCitaModel
+
+@{
+}
+
+<h1>Agendar Cita</h1>
+<form method="POST">
+
+
+
+    <div class="form-group">
+        <label asp-for="agenda.FechaCita"></label>
+        <input asp-for="agenda.FechaCita" class="form-control" type="date" value="2021-10-01">
+    </div>
+
+
+    <div class="form-group">
+        <label for="idPaciente">Paciente</label>
+        <select name="idPaciente" id="idPaciente" class="form-control">
+            @foreach (var paciente in Model.pacientes)
+            {
+                <option value ="@paciente.Id">@paciente.Nombre</option>
+            }
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        <label for="idMedico">Medico</label>
+        <select name="idMedico" id="idMedico" class="form-control">
+            @foreach (var medico in Model.medicos)
+            {
+                <option value ="@medico.Id">@medico.Nombre</option>
+            }
+        </select>
+    </div>
+
+
+
+
+<!--
+
+    <div class="form-group">
+        <label asp-for="agenda.Genero"></label>
+        <select asp-items="Html.GetEnumSelectList<Genero>()" class="form-control"></select>
+    </div>
+    
+    
+    <div class="form-group">
+        <label asp-for="paciente.TieneEps"></label>
+        <select asp-for="paciente.TieneEps" class="form-control form-select form-select-sm" aria-label=".form-select-sm example">
+            <option selected value="0">Si Tiene EPS</option>
+            <option value="1">No Tiene EPS</option>
+        </select>
+    </div>
+    -->
+
+    <button type="submit" class="btn btn-primary" >Crear Agenda</button>
+
+</form>
+
+<a class="btn btn-secondary" asp-page="./IndexAgendas" >Volver</a>
+
+

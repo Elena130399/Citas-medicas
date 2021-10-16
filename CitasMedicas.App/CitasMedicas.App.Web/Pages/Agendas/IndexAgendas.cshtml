@@ -1,0 +1,36 @@
+﻿@page
+@model CitasMedicas.App.Web.Pages.IndexAgendasModel
+@{
+}
+
+<h1>Listado de Agendas</h1>
+<a class="btn btn-primary" asp-page="./AgendarCita">Agendar Cita a Paciente</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Sede</th>
+            <th scope="col">Paciente</th>
+            <th colspan=3 scope="col">Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var agenda in Model.agendas)
+        {
+            <tr>
+                <td>@agenda.Id</td>
+                 
+                <td>@agenda.Sede</td> 
+                <td>@agenda.Paciente</td>
+                <td><a class="btn btn-secondary" asp-page="./AgendaDetalles" asp-route-id="@agenda.Id">Detalle</a></td>
+                <td><a class="btn btn-secondary" asp-page="./EditAgenda" asp-route-id="@agenda.Id">Editar</a></td>
+                <td><a class="btn btn-secondary" asp-page="./DeleteAgenda" asp-route-id="@agenda.Id">Eliminar</a></td>
+                
+            </tr>
+        }
+    </tbody>
+
+
+</table>

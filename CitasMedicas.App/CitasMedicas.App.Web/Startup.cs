@@ -29,6 +29,9 @@ namespace CitasMedicas.App.Web
             services.AddSingleton<IRepositorioPaciente, RepositorioPaciente>();
             services.AddSingleton<IRepositorioMedico, RepositorioMedico>();
             services.AddSingleton<IRepositorioCiudad, RepositorioCiudad>();
+            services.AddSingleton<IRepositorioSede, RepositorioSede>();
+            services.AddSingleton<IRepositorioAgenda, RepositorioAgenda>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
