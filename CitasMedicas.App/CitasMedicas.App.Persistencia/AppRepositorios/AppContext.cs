@@ -18,8 +18,10 @@ namespace CitasMedicas.App.Persistencia
            if (!optionsBuilder.IsConfigured)
            {
                optionsBuilder
-               .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = CitasMedicasData");
-               //.UseSqlServer("Initial Catalog=NOMBREDB; Data Source=NOMBRE_SERVIDOR; Integrated Security=true");
+               //.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = CitasMedicasData");
+               //.UseSqlServer("Initial Catalog=CitasMedicasFG; Data Source=EN2010449; Integrated Security=true");
+                .UseSqlServer("Server=tcp:citasmedicasfg.database.windows.net,1433;Initial Catalog=CitasMedicasFG;Persist Security Info=False;User ID=federicogomez;Password=ClavePrueba!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
            }
        }
    }

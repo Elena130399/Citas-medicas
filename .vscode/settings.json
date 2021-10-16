@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d8044bed-6958-40e9-bd05-de7e5a0a2477/resourceGroups/federico.gomez.free/providers/Microsoft.Web/sites/CitasMedicasMisionTic2022",
+    "appService.deploySubpath": "CitasMedicas.App\\CitasMedicas.App.Web\\publish"
+}
