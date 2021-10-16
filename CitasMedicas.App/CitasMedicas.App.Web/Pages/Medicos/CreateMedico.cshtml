@@ -7,59 +7,63 @@
 
 <h1>Crear Un Nuevo Medico</h1>
 <form method="POST">
-
-    <div class="form-group">
+<div class="form-row">
+    <div class="form-group col-md-6">
         <label asp-for="medico.Nombre"></label>
-        <input asp-for="medico.Nombre" class="form-control">
+        <input asp-for="medico.Nombre" class="form-control form-control-sm">
     </div>
 
-<div class="form-group">
+<div class="form-group col-md-6">
         <label asp-for="medico.Apellidos"></label>
-        <input asp-for="medico.Apellidos" class="form-control">
+        <input asp-for="medico.Apellidos" class="form-control form-control-sm">
     </div>
-    <div class="form-group">
+    </div>
+    <div class="form-row" >
+    <div class="form-group col-md-6">
         <label asp-for="medico.NumDoc"></label>
-        <input asp-for="medico.NumDoc" class="form-control">
+        <input asp-for="medico.NumDoc" class="form-control form-control-sm">
     </div>
-    <div class="form-group">
+    <div class="form-group col-md-4">
         <label asp-for="medico.NumeroTelefono"></label>
-        <input asp-for="medico.NumeroTelefono" class="form-control">
+        <input asp-for="medico.NumeroTelefono" class="form-control form-control-sm">
+    </div>
     </div>
     <div class="form-group">
         <label asp-for="medico.Direccion"></label>
-        <input asp-for="medico.Direccion" class="form-control">
+        <input asp-for="medico.Direccion" class="form-control form-control-sm">
     </div>
-    <div class="form-group">
+    <div class="form-row">
+    <div class="form-group col-md-6">
         <label asp-for="medico.Correo"></label>
-        <input asp-for="medico.Correo" class="form-control">
+        <input asp-for="medico.Correo" class="form-control form-control-sm">
     </div>
-    <div class="form-group">
+    <div class="form-group col-md-4">
         <label asp-for="medico.FechaNacimiento"></label>
-        <input asp-for="medico.FechaNacimiento" class="form-control" type="date" value="2000-01-01">
+        <input asp-for="medico.FechaNacimiento" class="form-control form-control-sm" type="date" value="2000-01-01">
     </div>
-    <div class="form-group">
+    <div class="form-group col-md-2">
         <label asp-for="medico.Genero"></label>
-        <select asp-items="Html.GetEnumSelectList<Genero>()" class="form-control"></select>
+        <select asp-items="Html.GetEnumSelectList<Genero>()" class="form-control form-control-sm"></select>
     </div>
+</div>
 
-
-
-    <div class="form-group">
+<div class="form-row">
+    <div class="form-group col-md-6">
         <label asp-for="medico.Codigo" ></label>
-        <input asp-for="medico.Codigo" class="form-control">
+        <input asp-for="medico.Codigo" class="form-control form-control-sm">
     </div>
-    <div class="form-group">
+    <div class="form-group col-md-4">
         <label asp-for="medico.Especializacion" ></label>
-        <select asp-items="Html.GetEnumSelectList<Especializacion>()" class="form-control"></select>
+        <select asp-items="Html.GetEnumSelectList<Especializacion>()" class="form-control form-control-sm"></select>
     </div>
-    <div class="form-group">
+    <div class="form-group col-md-2">
         <label asp-for="medico.TipoMedico" ></label>
-        <input asp-for="medico.TipoMedico" class="form-control">
+        <input asp-for="medico.TipoMedico" class="form-control form-control-sm">
     </div>
-
+</div>
     <div class="form-group">
         <label asp-for="medico.RegistroMedico" ></label>
-        <input asp-for="medico.RegistroMedico" class="form-control">
+        <input asp-for="medico.RegistroMedico" class="form-control form-control-sm">
     </div>
 
     <button type="submit" class="btn btn-primary" >Crear Medico</button>

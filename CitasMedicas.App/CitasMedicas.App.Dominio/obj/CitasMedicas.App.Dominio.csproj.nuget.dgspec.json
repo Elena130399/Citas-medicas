@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj": {}
+    "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj": {
+    "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj",
+        "projectUniqueName": "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj",
         "projectName": "CitasMedicas.App.Dominio",
-        "projectPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\FedGomez\\.nuget\\packages\\",
-        "outputPath": "C:\\CitasMedicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\obj\\",
+        "projectPath": "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\CitasMedicas.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\migue\\.nuget\\packages\\",
+        "outputPath": "C:\\CitasMedicas\\Citas-medicas\\CitasMedicas.App\\CitasMedicas.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\FedGomez\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\migue\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

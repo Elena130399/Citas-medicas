@@ -4,54 +4,133 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CitasMedicas.App.Web</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
+<link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/estilo.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style type="text/css">
+* {padding:0px;
+margin:0px;
+}
+#header{
+margin:auto;
+width:200px;
+font-family:Arial, Helvetica, sans-serif;
+}
+ul,ol
+{
+	list-style:none;
+}
+.nav li a {background-color:#00F5F5;
+color:#fff;
+text-decoration:none;
+padding:10px 15px;
+display:block;
+}
+.nav li a:hover{
+	background-color:#434343;
+}
+	
+.nav>li {
+	float:NONE;
+
+}
+.nav li ul{
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+.nav li:hover>ul {
+	display:block;
+}
+nav.li ul li {position:relative;
+}
+
+</style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">CitasMedicas.App.Web</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+
+    <div class="container" id = "global">
+        <div align="left" id="cabecera" style="background-color:">
+<table>
+
+<tr>
+<td width="246">
+<img src="~/imagenes/medicina1.jpg" alt="cav" width="320 height="260" border="3"/>
+</td>
+<td width="472">
+<h2><center>
+  <p style="color:#FFFFFF";><img src="~/imagenes/BOGPAS.jpg">    </p></center></h2>
+</td>
+<td width="287"><img src="~/imagenes/bal.jpg" alt="cav" width="284" height="141"300" border="3"/></td>
+</tr> 
+</table>
+        <div id="cuerpo">
+  
+  <p>&nbsp;</p>
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
+   
 
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Pacientes/Index1">Pacientes</a>
-                        </li>
+                            <a class="nav-link text-dark" asp-page="/Pacientes/CreatePacientes">Crear Paciente</a>
+</li>
+       </li>
 
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Medicos/IndexMedicos">Medicos</a>
+                            <a class="nav-link text-dark" asp-page="/Medicos/CreateMedico">Crear Medico</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Ciudades/IndexCiudades">Ciudades</a>
+                            <a class="nav-link text-dark" asp-page="/Ciudades/CreateCiudad">Crear Ciudad</a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - CitasMedicas.App.Web - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
+	  </li>
+  </ul>
+  
+    <br> 
+    <br>  
+    <img src="~/imagenes/medicina2.PNG" alt="logo" width="230" height="227"  /><br>
+ 
+</div>
+</div>
+        <div main role="menu"class="container" id = "menu" >
+            @RenderBody()
+            
+            </main>
+            </div>
+            
+            
+
+        
+         
+<center><div id="piedepagina">
+<p></p>
+<a href="http://www.facebook.com" target="_blank"><img src="~/imagenes/face1.png" alt="face" width="46"20"  /></a>&nbsp;&nbsp;
+&nbsp&nbsp&nbsp&nbsp
+<a href="http://www.instagram.com" target="_blank"><img src="~/imagenes/insta.jpg" alt="face" width="47"20"  /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="~/imagenes/wap.png" alt="wap" title="3203391119" width="48"20"  />
+</div>
+</div></center>
+
+
+            
+            
+            
+            
+
+        
+
+   
+        
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
