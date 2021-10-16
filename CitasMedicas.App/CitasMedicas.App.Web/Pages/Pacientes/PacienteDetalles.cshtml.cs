@@ -12,7 +12,7 @@ namespace CitasMedicas.App.Web.Pages.Pacientes
 {
     public class PacienteDetallesModel : PageModel
     {
-private readonly IRepositorioPaciente _repoPaciente=new RepositorioPaciente();
+        private readonly IRepositorioPaciente _repoPaciente=new RepositorioPaciente();
 
         public Paciente paciente {get;set;}
         public PacienteDetallesModel(IRepositorioPaciente repoPaciente)
