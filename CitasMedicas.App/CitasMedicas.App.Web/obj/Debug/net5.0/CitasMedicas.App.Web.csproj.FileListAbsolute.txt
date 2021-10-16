@@ -168,3 +168,5 @@ C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pag
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pages\Sedes\IndexSedes.cshtml.g.cs
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pages\Sedes\CreateSede.cshtml.g.cs
 C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\obj\Debug\net5.0\Razor\Pages\Sedes\AddCiudad.cshtml.g.cs
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\bin\Debug\net5.0\Humanizer.dll
+C:\CitasMedicas\CitasMedicas.App\CitasMedicas.App.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
