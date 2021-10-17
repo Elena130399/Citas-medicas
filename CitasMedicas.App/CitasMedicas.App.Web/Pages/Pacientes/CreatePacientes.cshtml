@@ -5,43 +5,47 @@
 @{
 }
 
-<h1>Crear Un Nuevo Paciente</h1>
-<form method="POST">
-    <div class="form-group">
+<h3><center>Crear Un Nuevo Paciente</center></h3>
+<form method="POST" >
+    <div class="form-row">
+    <div class="form-group col-md-6">
         <label asp-for="paciente.Nombre"></label>
-        <input asp-for="paciente.Nombre" class="form-control">
+        <input asp-for="paciente.Nombre"  class="form-control form-control-sm" >
         <span class="text-danger" asp-validation-for="paciente.Nombre" ></span>
     </div>    
-    <div class="form-group">
+    <div class="form-group col-md-6">
         <label asp-for="paciente.Apellidos"></label>
-        <input asp-for="paciente.Apellidos" class="form-control">
-        <span class="text-danger" asp-validation-for="paciente.Apellidos" ></span>
-        
+        <input asp-for="paciente.Apellidos" class="form-control form-control-sm">
+         <span class="text-danger" asp-validation-for="paciente.Apellidos" ></span>
     </div>
-    <div class="form-group">
+    <div class="form-group col-md-6">
         <label asp-for="paciente.NumDoc"></label>
-        <input asp-for="paciente.NumDoc" class="form-control">
-        <span class="text-danger" asp-validation-for="paciente.NumDoc" ></span>
+        <input asp-for="paciente.NumDoc" class="form-control form-control-sm">
+         <span class="text-danger" asp-validation-for="paciente.NumDoc" ></span>
     </div>
-    <div class="form-group">
+    <div class="form-group col-md-6 ">
         <label asp-for="paciente.NumeroTelefono"></label>
-        <input asp-for="paciente.NumeroTelefono" class="form-control">
+        <input asp-for="paciente.NumeroTelefono" class="form-control form-control-sm">
     </div>
-    <div class="form-group">
+    </div>
+    <div class="form-group ">
         <label asp-for="paciente.Direccion"></label>
-        <input asp-for="paciente.Direccion" class="form-control">
+        <input asp-for="paciente.Direccion" class="form-control form-control-sm">
     </div>
-    <div class="form-group">
+    <div class="form-row">
+        <div class="form-group col-md-6">
         <label asp-for="paciente.Correo"></label>
-        <input asp-for="paciente.Correo" class="form-control">
+        <input asp-for="paciente.Correo" class="form-control form-control-sm">
+         <span class="text-danger" asp-validation-for="paciente.Correo" ></span>
     </div>
-    <div class="form-group">
+    <div class="form-group col-md-4">
         <label asp-for="paciente.FechaNacimiento"></label>
-        <input asp-for="paciente.FechaNacimiento" class="form-control" type="date" value="2000-01-01">
+        <input asp-for="paciente.FechaNacimiento" class="form-control form-control-sm" type="date" value="2000-01-01">
     </div>
-    <div class="form-group">
+    <div class="form-group col-md-2">
         <label asp-for="paciente.Genero"></label>
-        <select asp-items="Html.GetEnumSelectList<Genero>()" class="form-control"></select>
+        <select asp-items="Html.GetEnumSelectList<Genero>()" class="form-control form-control-sm"></select>
+    </div>
     </div>
     <!--
     
@@ -54,9 +58,11 @@
     </div>
     -->
 
-    <button type="submit" class="btn btn-primary" >Crear Paciente</button>
 
+  <div class="form-group">
+
+  </div>
+  <button type="submit" class="btn btn-primary">Crear Paciente</button>
 </form>
 
 <a class="btn btn-secondary" asp-page="./Index1" >Volver</a>
-

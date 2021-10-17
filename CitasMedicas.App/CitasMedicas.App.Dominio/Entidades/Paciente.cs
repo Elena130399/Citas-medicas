@@ -1,5 +1,6 @@
 using System;
 
+
 namespace CitasMedicas.App.Dominio
 {
     public class Paciente:Persona
