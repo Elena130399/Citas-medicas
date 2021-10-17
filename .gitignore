@@ -16,6 +16,27 @@
 *.userosscache
 *.sln.docstates
 
+CitasMedicas.App.Web/bin
+CitasMedicas.App.Web/obj
+CitasMedicas.App.Persistencia/bin
+CitasMedicas.App.Persistencia/obj
+CitasMedicas.App.Dominio/bin
+CitasMedicas.App.Dominio/obj
+CitasMedicas.App.Consola/bin
+CitasMedicas.App.Consola/obj
+*.cache
+*.dll
+*.pdb
+*.cache
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+
+
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
